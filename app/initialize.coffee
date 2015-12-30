@@ -26,7 +26,7 @@ $(document).ready ->
         styles: styles
       map = new (google.maps.Map)(document.getElementById('map-canvas'), mapOptions)
 
-      myIcon = '../images/svg/marker.svg'
+      myIcon = '/scena-landing/images/svg/marker.svg'
 
       marker = new (google.maps.Marker)(
         position: myLatlng
