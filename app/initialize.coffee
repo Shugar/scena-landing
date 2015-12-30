@@ -1,4 +1,15 @@
 $(document).ready ->
+
+  window.sr = ScrollReveal()
+    .reveal( '.firstSection', { delay: 100, distance: '150px', scale: 0.9 } )
+    .reveal( '.secondSection', { delay: 400, distance: '150px', scale: 0.9 } )
+    .reveal( '.thirdSection', { delay: 400, distance: '150px', scale: 0.9 } )
+    .reveal( '.fourthSection', { delay: 400, distance: '150px', scale: 0.9 } )
+    .reveal( '.formSection', { delay: 400, distance: '150px', scale: 0.9 } )
+    .reveal( '.mapSection', { delay: 400, distance: '150px', scale: 0.9 } )
+    .reveal( '.footer', { delay: 400, distance: '150px', scale: 0.9 } )
+
+
   init_map = ->
 
     if $('#map-canvas').length > 0
