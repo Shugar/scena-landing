@@ -1,0 +1,99 @@
+doctype html
+head
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  meta(name="viewport" content="width=device-width")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  link(rel="stylesheet" href="stylesheets/app.css")
+  title Салон красоты
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+  script(src="https://maps.googleapis.com/maps/api/js?v=3?key=AIzaSyALv14QJCMFIoAqH2JLuGruwxtxCG_IBKk")
+
+  script.
+    require('initialize');
+
+body
+
+  .header
+    .container
+      .header-item
+        | Ул. Шолохова 53
+
+      .header-item
+        .header-logo
+          img(src="images/svg/logo.svg")
+
+      .header-item
+        | +7 (938) 155-31-15
+
+
+  .firstSection
+    .firstSection-item
+        .firstSection-title
+          | Команда мастеров высокого класса
+        .firstSection-hr
+        .firstSection-subtitle
+          | Мы используем в работе только проверенную профессиональную косметику.
+        .firstSection-button
+          | Записаться
+
+    .firstSection-item
+
+  .secondSection
+    .container
+      .secondSection-hr
+      .secondSection-title
+        | Наш салон
+      .secondSection-text
+        | Салон красоты CЦЕНА — это команда высокопрофессиональных мастеров. Постоянно совершенствующие свое мастерство специалисты, идущие в ногу с последними тенденциями моды, дипломанты конкурсов по парикмахерскому искусству и ногтевому сервису , участники различных профессиональных показов.
+
+  .thirdSection
+    .thirdSection-item
+      .thirdSection-itemBackground
+    .thirdSection-item
+      .thirdSection-itemText
+        | В салоне Вы можете отдохнуть и насладиться уютной атмосферой, выпить чашечку чая или кофе, предоставив нашим мастерам возможность создать тот идеальный образ, о котором Вы только мечтаете!
+
+  .fourthSection
+    .container
+      .fourthSection-hr
+      .fourthSection-title
+        | Услуги
+      .fourthSection-text
+        | Актуальные модные женские стрижки, мужские, детские стрижки, окрашивание, уникальные методики ухода за волосами, эксклюзивные свадебные, вечерние прически и макияж, маникюр и педикюр по австрийским технологиям , наращивание ресниц, SPA программа коррекции тела, несколько видов массажа , косметические услуги (эпиляция , чистки , маски, пиллинги и др.) — вот лишь неполный спектр высококачественных услуг, которые мы предлагаем нашим клиентам.
+
+  .formSection
+    .container
+      .formSection-title
+        | Запишись прямо сейчас!
+      .formSection-hr
+      .formSection-button
+        | Записаться
+
+  .mapSection
+    #map-canvas
+
+  .footer
+    .container
+      .footer-item
+        | Ул. Шолохова 53
+
+      .footer-item
+        .footer-logo
+          img(src="images/svg/logo.svg")
+
+      .footer-item
+        .footer-number
+          | +7 (938) 155-31-15
+
+  .modal
+    .modal-container
+      .modal-close
+        img(src="images/svg/cross.svg")
+      form
+        .modal-title
+          | Записаться на прием
+        input(type="text" id="name" placeholder="Имя")
+        input(type="text" id="phone" placeholder="Телефон")
+        .modal-button
+          | Записаться
